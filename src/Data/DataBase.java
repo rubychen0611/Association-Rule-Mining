@@ -55,4 +55,13 @@ public class DataBase
         for(Transaction t: DB)
             t.output();
     }
+    public int getSize()        //获得数据规模
+    {
+        return DB.size();
+    }
+
+    public ArrayList<Transaction> getDB()
+    {
+        return DB;
+    }
 }

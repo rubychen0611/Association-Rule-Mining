@@ -19,4 +19,9 @@ public class Transaction
             System.out.print(i.getName() + "|");
         System.out.println();
     }
+
+    public ArrayList<Item> getTransaction()
+    {
+        return transaction;
+    }
 }
