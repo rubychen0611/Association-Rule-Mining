@@ -11,10 +11,12 @@ public class Apriori implements Miner
 {
     private static ArrayList<Transaction> DB;
     private static double min_sup;
-    public Apriori(DataBase DataBase, double min_sup)
+    private static double min_conf;
+    public Apriori(DataBase DataBase, double min_sup, double min_conf)
     {
         this.DB = DataBase.getDB();
         this.min_sup = min_sup;
+        this.min_conf = min_conf;
     }
    TreeSet<ItemSet> find_frequent_1_itemSets()
     {
@@ -63,14 +65,12 @@ public class Apriori implements Miner
     }
     private void deleteInfrequentItemSets(TreeMap<ItemSet, Integer> mapK)
     {
-        Iterator<Map.Entry<ItemSet,Integer>> it = mapK.entrySet().iterator(); it.hasNext();
+        Iterator<Map.Entry<ItemSet,Integer>> it = mapK.entrySet().iterator();
         while(it.hasNext())
         {
             Map.Entry<ItemSet,Integer> entry=it.next();
             if(entry.getValue() < (int)DB.size() * min_sup)
                 it.remove();
-        //    else
-             //   System.out.println(entry.getKey() + " " + entry.getValue());
         }
     }
     @Override
@@ -80,6 +80,7 @@ public class Apriori implements Miner
         for(int k = 2; !L.isEmpty(); k++)
         {
             TreeSet<ItemSet> Ck = aproiri_gen(L);
+            if(Ck.isEmpty()) break;
             TreeMap<ItemSet, Integer> mapK = new TreeMap<>();
             for(ItemSet set: Ck)
             {
@@ -95,17 +96,12 @@ public class Apriori implements Miner
                         mapK.put(set, value + 1);
                     }
                 }
-                /*ArrayList<ItemSet> Ct = t.getSubSets(Ck);
-                for(ItemSet c: Ct)
-                {
-                    int value = mapK.get(c);
-                    mapK.put(c, value + 1);
-                }*/
             }
             deleteInfrequentItemSets(mapK);
             L = new TreeSet<>();
             L.addAll(mapK.keySet());
             outputFrequentItemSets(mapK, k);
+            outputStrongAssociationRules(mapK, k);
         }
     }
 
@@ -113,11 +109,46 @@ public class Apriori implements Miner
     public void outputFrequentItemSets(TreeMap<ItemSet, Integer> map, int k)
     {
         System.out.println(k + "频繁项集：");
-        Iterator<Map.Entry<ItemSet,Integer>> it = map.entrySet().iterator(); it.hasNext();
+        Iterator<Map.Entry<ItemSet,Integer>> it = map.entrySet().iterator();
         while(it.hasNext())
         {
             Map.Entry<ItemSet,Integer> entry=it.next();
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
+    }
+
+    @Override
+    public void outputStrongAssociationRules(TreeMap<ItemSet, Integer> map, int k)
+    {
+        System.out.println(k + "频繁项集产生的强关联规则：");
+        Iterator<Map.Entry<ItemSet,Integer>> it = map.entrySet().iterator();
+        while(it.hasNext())
+        {
+            Map.Entry<ItemSet,Integer> entry=it.next();
+            ItemSet l = entry.getKey();
+            TreeSet<ItemSet> subsets = l.getSubSets();
+            for(ItemSet s: subsets)
+            {
+                if(support_count(l) >= support_count(s) * min_conf)
+                {
+                    TreeSet<Item> remainSet = new TreeSet<>();
+                    remainSet.addAll(l.getItemSet());
+                    remainSet.removeAll(s.getItemSet());
+                    ItemSet remain = new ItemSet(remainSet);
+
+                    System.out.println(s +" => " + remain);
+                }
+            }
+        }
+    }
+    private int support_count(ItemSet set)
+    {
+        int count = 0;
+        for(Transaction t: DB)
+        {
+                if(t.getTransaction().containsAll(set.getItemSet()))
+                   count ++;
+        }
+        return count;
     }
 }

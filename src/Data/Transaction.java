@@ -27,26 +27,11 @@ public class Transaction
     {
         return transaction;
     }
-    public ArrayList<ItemSet> getSubSets( TreeSet<ItemSet> Ck)
+    public ItemSet toItemSet()
     {
-        int N = (int)Math.pow(2, transaction.size());
-        ArrayList<ItemSet> Ct = new ArrayList<>();
-        for(int i = 0; i < N; i++)
-        {
-            int k = 0, m = i;
-            ItemSet subset = new ItemSet();
-            while(m > 0)
-            {
-                if((m & 1) == 1)
-                {
-                    subset.addItem(this.transaction.get(k));
-                }
-                m /= 2;
-                k++;
-            }
-            if(!subset.isEmpty() && Ck.contains(subset))
-                Ct.add(subset);
-        }
-        return Ct;
+        TreeSet<Item> treeSet = new TreeSet<>();
+        treeSet.addAll(transaction);
+        ItemSet itemSet = new ItemSet(treeSet);
+        return itemSet;
     }
 }

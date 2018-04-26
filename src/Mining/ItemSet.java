@@ -3,6 +3,7 @@ package Mining;
 import Data.Item;
 import com.sun.org.apache.xpath.internal.operations.Equals;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -14,6 +15,7 @@ public class ItemSet implements Comparable<ItemSet>
     {
         itemSet = new TreeSet<Item>();
     }
+    public ItemSet(TreeSet<Item> itemSet){this.itemSet = itemSet;}
     public void addItem(Item item)
     {
         itemSet.add(item);
@@ -58,9 +60,14 @@ public class ItemSet implements Comparable<ItemSet>
     @Override
     public String toString()
     {
-        String str = "";
+        String str = "{";
         for(Item item : itemSet)
-            str += (item.toString() + "|");
+        {
+            str += item.toString();
+            if(item == itemSet.last())
+                str += "}";
+            else str += ",";
+        }
         return str;
     }
 
@@ -108,5 +115,33 @@ public class ItemSet implements Comparable<ItemSet>
     public TreeSet<Item> getItemSet()
     {
         return itemSet;
+    }
+    public TreeSet<ItemSet> getSubSets()
+    {
+        int N = (int)Math.pow(2, this.itemSet.size());
+        ArrayList<Item> copyset = new ArrayList<>();
+        copyset.addAll(this.itemSet);
+        TreeSet<ItemSet> subsets = new TreeSet<>();
+        for(int i = 0; i < N-1; i++)
+        {
+            int k = 0, m = i;
+            ItemSet subset = new ItemSet();
+            while(m > 0)
+            {
+                if((m & 1) == 1)
+                {
+                    subset.addItem(copyset.get(k));
+                }
+                m >>= 1;
+                k++;
+            }
+            if(!subset.isEmpty())
+                subsets.add(subset);
+        }
+        return subsets;
+    }
+    public int getSize()
+    {
+        return this.itemSet.size();
     }
 }
