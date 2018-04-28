@@ -2,8 +2,7 @@ package Data;
 
 import Mining.ItemSet;
 
-import java.util.ArrayList;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Transaction
 {
@@ -34,4 +33,5 @@ public class Transaction
         ItemSet itemSet = new ItemSet(treeSet);
         return itemSet;
     }
+
 }

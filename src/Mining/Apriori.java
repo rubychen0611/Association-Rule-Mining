@@ -105,7 +105,6 @@ public class Apriori implements Miner
         }
     }
 
-    @Override
     public void outputFrequentItemSets(TreeMap<ItemSet, Integer> map, int k)
     {
         System.out.println(k + "频繁项集：");
@@ -117,7 +116,6 @@ public class Apriori implements Miner
         }
     }
 
-    @Override
     public void outputStrongAssociationRules(TreeMap<ItemSet, Integer> map, int k)
     {
         System.out.println(k + "频繁项集产生的强关联规则：");

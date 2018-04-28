@@ -29,4 +29,10 @@ public class Item implements Comparable<Item>
     {
         return name;
     }
+
+    @Override
+    public int hashCode()
+    {
+        return name.hashCode();
+    }
 }

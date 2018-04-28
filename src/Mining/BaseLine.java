@@ -64,11 +64,10 @@ public class BaseLine implements Miner
             if(entry.getValue() < (int)DB.size() * min_sup)
                 it.remove();
         }
-        outputFrequentItemSets(freqSets, 0);        //k在此处没用上
+        outputFrequentItemSets(freqSets);        //k在此处没用上
     }
 
-    @Override
-    public void outputFrequentItemSets(TreeMap<ItemSet, Integer> map, int k)
+    public void outputFrequentItemSets(TreeMap<ItemSet, Integer> map)
     {
         Iterator<Map.Entry<ItemSet,Integer>> it = freqSets.entrySet().iterator();
         while(it.hasNext())
@@ -78,7 +77,6 @@ public class BaseLine implements Miner
         }
     }
 
-    @Override
     public void outputStrongAssociationRules(TreeMap<ItemSet, Integer> map, int k)
     {
 

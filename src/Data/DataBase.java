@@ -20,7 +20,8 @@ public class DataBase
     }
     private void readGroceryData()
     {
-      File file = new File("dataset\\GroceryStore\\Groceries.txt");
+      //File file = new File("dataset\\GroceryStore\\Groceries.txt");
+        File file = new File("dataset\\GroceryStore\\test.txt");
         try {
                 if (file.exists())
                 {

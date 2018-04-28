@@ -2,6 +2,7 @@ package Test;
 import Data.DataBase;
 import Data.DataSet;
 import Mining.Apriori;
+import Mining.FP_Growth.FP_Growth;
 import Mining.Miner;
 
 import org.junit.Test;
@@ -17,7 +18,7 @@ public class MiningTest
         long max = mu.getMax();
         return ">>getCommitted(MB)=>" + getCommitted / 1000 / 1000 + "\n"
                 +">>getInit(MB)=" + getInit / 1000 / 1000 + "\n"
-                +">>getUsed(MB)=" + getUsed+ "\n"
+                +">>getUsed(MB)=" + getUsed / 1000 / 1000+ "\n"
                 +">>max(MB)=" + max / 1000 / 1000 + "\n";
     }
     @Test
@@ -25,16 +26,10 @@ public class MiningTest
     {
         double min_sup = 0.02;     //最小支持度阈值
         double min_conf = 0.5;    //最小置信度阈值
-       try{
-           char read = (char) System.in.read();
-       }catch (Exception e)
-       {
-           e.printStackTrace();
-       }
         System.out.println(getMemoryUseInfo());
         DataBase dataBase; dataBase = new DataBase(DataSet.GROCERYSTORE);      //数据库初始化
         Miner miner;
-        miner = new Apriori(dataBase, min_sup, min_conf);
+        miner = new FP_Growth(dataBase, min_sup, min_conf);
         System.out.println(getMemoryUseInfo());
         miner.mine();
         System.out.println(getMemoryUseInfo());

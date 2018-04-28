@@ -1,6 +1,7 @@
 package Mining;
 import Data.DataBase;
 import Data.DataSet;
+import Mining.FP_Growth.FP_Growth;
 
 enum MiningMethod{APRIORI, FPGROWTH, BASELINE};
 public class DataMining
@@ -8,12 +9,12 @@ public class DataMining
     private static double min_sup = 0.02;     //最小支持度阈值
     private static double min_conf = 0.5;    //最小置信度阈值
     public static DataSet dataSet = DataSet.GROCERYSTORE;     //挖掘内容：GroceryStore还是UNIX_usage
-    public static MiningMethod method = MiningMethod.BASELINE;   //挖掘方法：Apriori，fp-growth，还是baseline
+    public static MiningMethod method = MiningMethod.FPGROWTH;   //挖掘方法：Apriori，fp-growth，还是baseline
     private static DataBase dataBase;
     public static void main(String []args)
     {
         try{
-            char read = (char) System.in.read();
+            System.in.read();
         }catch (Exception e)
         {
             e.printStackTrace();
