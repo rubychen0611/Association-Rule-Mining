@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" line="223" />
+    <bookmark url="file://$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" line="202" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="220757d2-ddfb-4606-a7ab-361d6ba10a66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataset/GroceryStore/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Mining/FP_Growth.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Data/Item.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Data/Item.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Data/Transaction.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Data/Transaction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/Apriori.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/Apriori.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/BaseLine.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/BaseLine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/DataMining$1.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/DataMining$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/DataMining.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/DataMining.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/Miner.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/Miner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/MiningMethod.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/MiningMethod.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Test/MiningTest.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Test/MiningTest.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER0/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER1/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER2/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER3/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER4/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER5/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER6/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER7/sanitized_all.981115184025" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dataset/UNIX_usage/USER8/sanitized_all.981115184025" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Data/DataBase.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Data/DataBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/CPB.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/CPB.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/FPTree.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/FPTree.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/FP_Growth.class" afterPath="$PROJECT_DIR$/out/production/Assignment2/Mining/FP_Growth/FP_Growth.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/DataBase.java" afterPath="$PROJECT_DIR$/src/Data/DataBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/Item.java" afterPath="$PROJECT_DIR$/src/Data/Item.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data/Transaction.java" afterPath="$PROJECT_DIR$/src/Data/Transaction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/Apriori.java" afterPath="$PROJECT_DIR$/src/Mining/Apriori.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/BaseLine.java" afterPath="$PROJECT_DIR$/src/Mining/BaseLine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/DataMining.java" afterPath="$PROJECT_DIR$/src/Mining/DataMining.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/Miner.java" afterPath="$PROJECT_DIR$/src/Mining/Miner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java" afterPath="$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" afterPath="$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Mining/ItemSet.java" afterPath="$PROJECT_DIR$/src/Mining/ItemSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test/MiningTest.java" afterPath="$PROJECT_DIR$/src/Test/MiningTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,11 +47,18 @@
       <file leaf-file-name="FP_Growth.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="314" column="37" lean-forward="false" selection-start-line="314" selection-start-column="37" selection-end-line="314" selection-end-column="37" />
+            <state relative-caret-position="363">
+              <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="class#FPTreeNode#0" expanded="false" />
+                <element signature="class#FPTree#0" expanded="false" />
+                <element signature="e#2005#2006#0" expanded="true" />
+                <element signature="e#2045#2046#0" expanded="true" />
+                <element signature="e#2770#2771#0" expanded="true" />
+                <element signature="e#2837#2838#0" expanded="true" />
+                <element signature="e#4683#4684#0" expanded="true" />
+                <element signature="e#4724#4725#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,8 +67,18 @@
       <file leaf-file-name="MiningTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Test/MiningTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="584">
+              <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataMining.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mining/DataMining.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27">
+              <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -72,8 +87,8 @@
       <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Data/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="189">
+              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -82,12 +97,22 @@
       <file leaf-file-name="CPB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+            <state relative-caret-position="189">
+              <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apriori.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Mining/Apriori.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2254">
+              <caret line="129" column="66" lean-forward="false" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,8 +133,8 @@
       <file leaf-file-name="ItemSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mining/ItemSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+            <state relative-caret-position="3487">
+              <caret line="152" column="9" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,7 +161,14 @@
       <find>headTable</find>
       <find>remove</find>
       <find>min_</find>
+      <find>TreeMap</find>
+      <find>Tree</find>
+      <find>Hash</find>
+      <find>min_conf</find>
     </findStrings>
+    <replaceStrings>
+      <replace>HashMap</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -152,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/Item.java" />
         <option value="$PROJECT_DIR$/src/Data/DataSet.java" />
         <option value="$PROJECT_DIR$/src/Test/Test.java" />
-        <option value="$PROJECT_DIR$/src/Mining/ItemSet.java" />
         <option value="$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/src/Mining/FP_Growth.java" />
         <option value="$PROJECT_DIR$/src/Mining/HeadTableLine.java" />
@@ -161,12 +192,13 @@
         <option value="$PROJECT_DIR$/src/Mining/BaseLine.java" />
         <option value="$PROJECT_DIR$/src/Data/Transaction.java" />
         <option value="$PROJECT_DIR$/dataset/GroceryStore/test.txt" />
-        <option value="$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java" />
         <option value="$PROJECT_DIR$/src/Data/Item.java" />
         <option value="$PROJECT_DIR$/src/Mining/DataMining.java" />
+        <option value="$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java" />
         <option value="$PROJECT_DIR$/src/Mining/Apriori.java" />
-        <option value="$PROJECT_DIR$/src/Test/MiningTest.java" />
+        <option value="$PROJECT_DIR$/src/Mining/ItemSet.java" />
         <option value="$PROJECT_DIR$/src/Data/DataBase.java" />
+        <option value="$PROJECT_DIR$/src/Test/MiningTest.java" />
         <option value="$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java" />
       </list>
     </option>
@@ -177,7 +209,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="873" />
     <option name="width" value="237" />
     <option name="height" value="56" />
@@ -224,13 +256,6 @@
               <item name="Assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="dataset" type="462c0819:PsiDirectoryNode" />
               <item name="UNIX_usage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Assignment2" type="462c0819:PsiDirectoryNode" />
-              <item name="dataset" type="462c0819:PsiDirectoryNode" />
-              <item name="UNIX_usage" type="462c0819:PsiDirectoryNode" />
-              <item name="USER0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Assignment2" type="b2602c69:ProjectViewProjectNode" />
@@ -454,44 +479,44 @@
       <workItem from="1524808907698" duration="12801000" />
       <workItem from="1524827074818" duration="14680000" />
       <workItem from="1524844953598" duration="274000" />
-      <workItem from="1524876667280" duration="1117000" />
+      <workItem from="1524876667280" duration="8945000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 00h 05m 59s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 31m 42s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 00h 06m 38s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 31m 55s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 00h 07m 04s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 33m 19s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 08h 51m 48s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 34m 56s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 08h 52m 19s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 41m 54s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 08h 52m 45s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 42m 35s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 08h 54m 47s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 43m 04s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 08h 57m 15s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 43m 39s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 09h 07m 59s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 44m 25s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MiningTest_testApriori - 2018.04.28 at 09h 09m 33s.xml">
+    <history-entry file="MiningTest_testApriori - 2018.04.28 at 11h 45m 43s.xml">
       <configuration name="MiningTest.testApriori" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71023000" />
+    <option name="totallyTimeSpent" value="78851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,7 +528,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -514,8 +539,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25890738" sideWeight="0.50431967" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8990499" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25771973" sideWeight="0.49568033" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.77434677" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4679335" sideWeight="0.49568033" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2062635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -548,18 +573,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5415677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45486936" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5534442" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23515439" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897863" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35391924" sideWeight="0.49568033" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25771973" sideWeight="0.49568033" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19978401" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4679335" sideWeight="0.49568033" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2062635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -573,7 +598,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -918,30 +943,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_144/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="243" column="0" lean-forward="false" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mining/DataMining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -956,16 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mining/Apriori.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1917">
-          <caret line="71" column="59" lean-forward="false" selection-start-line="71" selection-start-column="59" selection-end-line="71" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Data/DataSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -974,39 +969,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/MiningTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Mining/FP_Growth/CPB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Data/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mining/ItemSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="121" column="29" lean-forward="false" selection-start-line="121" selection-start-column="29" selection-end-line="121" selection-end-column="29" />
+        <state relative-caret-position="189">
+          <caret line="29" column="41" lean-forward="false" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mining/ItemSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3487">
+          <caret line="152" column="9" lean-forward="false" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mining/Apriori.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2254">
+          <caret line="129" column="66" lean-forward="false" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Data/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test/MiningTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="31" column="8" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Mining/DataMining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="7" column="1" lean-forward="false" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Mining/FP_Growth/FP_Growth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="314" column="37" lean-forward="false" selection-start-line="314" selection-start-column="37" selection-end-line="314" selection-end-column="37" />
+        <state relative-caret-position="363">
+          <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="class#FPTreeNode#0" expanded="false" />
+            <element signature="class#FPTree#0" expanded="false" />
+            <element signature="e#2005#2006#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2770#2771#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#4724#4725#0" expanded="true" />
           </folding>
         </state>
       </provider>

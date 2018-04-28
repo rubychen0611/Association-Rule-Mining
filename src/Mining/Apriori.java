@@ -20,7 +20,7 @@ public class Apriori implements Miner
     }
    TreeSet<ItemSet> find_frequent_1_itemSets()
     {
-       TreeMap<ItemSet,Integer> map = new TreeMap<>();
+       HashMap<ItemSet,Integer> map = new HashMap<>();
         for(Transaction t : DB)
         {
             for(Item item: t.getTransaction())
@@ -63,7 +63,7 @@ public class Apriori implements Miner
         }
         return Ck;
     }
-    private void deleteInfrequentItemSets(TreeMap<ItemSet, Integer> mapK)
+    private void deleteInfrequentItemSets(HashMap<ItemSet, Integer> mapK)
     {
         Iterator<Map.Entry<ItemSet,Integer>> it = mapK.entrySet().iterator();
         while(it.hasNext())
@@ -81,7 +81,7 @@ public class Apriori implements Miner
         {
             TreeSet<ItemSet> Ck = aproiri_gen(L);
             if(Ck.isEmpty()) break;
-            TreeMap<ItemSet, Integer> mapK = new TreeMap<>();
+            HashMap<ItemSet, Integer> mapK = new HashMap<>();
             for(ItemSet set: Ck)
             {
                 mapK.put(set, 0);
@@ -105,7 +105,7 @@ public class Apriori implements Miner
         }
     }
 
-    public void outputFrequentItemSets(TreeMap<ItemSet, Integer> map, int k)
+    public void outputFrequentItemSets(HashMap<ItemSet, Integer> map, int k)
     {
         System.out.println(k + "频繁项集：");
         Iterator<Map.Entry<ItemSet,Integer>> it = map.entrySet().iterator();
@@ -116,7 +116,7 @@ public class Apriori implements Miner
         }
     }
 
-    public void outputStrongAssociationRules(TreeMap<ItemSet, Integer> map, int k)
+    public void outputStrongAssociationRules(HashMap<ItemSet, Integer> map, int k)
     {
         System.out.println(k + "频繁项集产生的强关联规则：");
         Iterator<Map.Entry<ItemSet,Integer>> it = map.entrySet().iterator();

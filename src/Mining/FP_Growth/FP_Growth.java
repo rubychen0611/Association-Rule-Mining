@@ -57,14 +57,14 @@ class FPTree
 {
     private FPTreeNode root;
     private LinkedHashMap<Item, LinkedList<FPTreeNode>> headTable;
-    TreeMap<Item, Integer> countmap;                    //TODO: change to hash
+    HashMap<Item, Integer> countmap;                    //TODO: change to hash
     public FPTree()
     {
         root = new FPTreeNode(null, null);
         headTable = new LinkedHashMap<>();
     }
 
-    public FPTree(ArrayList <CPB> cpbs, TreeMap<Item, Integer> countmap)         //由条件模式基建树
+    public FPTree(ArrayList <CPB> cpbs, HashMap<Item, Integer> countmap)         //由条件模式基建树
     {
         this.countmap = countmap;
         root = new FPTreeNode(null, null);
@@ -79,14 +79,14 @@ class FPTree
         }
     }
 
-    public void setCountmap(TreeMap<Item, Integer> countmap)
+    public void setCountmap(HashMap<Item, Integer> countmap)
     {
         this.countmap = countmap;
     }
 
     public FPTreeNode getRoot() { return root; }
 
-    public TreeMap<Item, Integer> getCountmap() { return countmap; }
+    public HashMap<Item, Integer> getCountmap() { return countmap; }
 
     public LinkedHashMap<Item, LinkedList<FPTreeNode>> getHeadTable() { return headTable; }
 
@@ -215,17 +215,19 @@ public class FP_Growth implements Miner
     private static ArrayList<Transaction> DB;
     private static double min_sup;
     private static double min_conf;
-    TreeMap<Item, Integer> frequent_1_itemSets;
+    HashMap<Item, Integer> frequent_1_itemSets;
+    HashMap<ItemSet, Integer> frequentSets;
     public FP_Growth(DataBase DataBase, double min_sup, double min_conf)
     {
         this.DB = DataBase.getDB();
         this.min_sup = min_sup;
         this.min_conf = min_conf;
+        frequentSets = new HashMap<>();
     }
 
     private void find_frequent_1_itemSets()
     {
-        frequent_1_itemSets = new TreeMap<>();
+        frequent_1_itemSets = new HashMap<>();
         for(Transaction t : DB)
         {
             for(Item item: t.getTransaction())
@@ -242,14 +244,13 @@ public class FP_Growth implements Miner
         //删去支持度小于阈值的
        deleteInfrequentItems(frequent_1_itemSets);
     }
-    public static void deleteInfrequentItems(TreeMap<Item, Integer> map)
+    public static void deleteInfrequentItems(HashMap<Item, Integer> map)
     {
         Iterator<Map.Entry<Item, Integer>> it = map.entrySet().iterator();
         while(it.hasNext())
         {
             Map.Entry<Item, Integer> entry=it.next();
-            //if(entry.getValue() <  (int)DB.size() * min_sup)
-            if(entry.getValue() < 3)
+            if(entry.getValue() <  (int)DB.size() * min_sup)
                 it.remove();
         }
     }
@@ -272,9 +273,9 @@ public class FP_Growth implements Miner
         }
         return cpbs;
     }
-    private  TreeMap<Item, Integer> prune(ArrayList<CPB> cpbs)
+    private  HashMap<Item, Integer> prune(ArrayList<CPB> cpbs)
     {
-        TreeMap<Item, Integer> countmap = new TreeMap<>();
+        HashMap<Item, Integer> countmap = new HashMap<>();
         for(CPB cpb: cpbs)
         {
             for(Item item: cpb.getList())
@@ -314,6 +315,8 @@ public class FP_Growth implements Miner
                 int support_count = tree.getCountmap().get(subset.getLast());
                 subset.addAll(alpha);
                 outputFrequentItemSets(subset,support_count);
+                if(subset.size() > 1)
+                    frequentSets.put(new ItemSet(new TreeSet<>(subset)), support_count);
             }
 
             return;
@@ -329,8 +332,10 @@ public class FP_Growth implements Miner
             beta.addFirst(entry.getKey());
             int support_count = tree.getSupportCount(entry.getKey());
             outputFrequentItemSets(beta, support_count);
+            if(beta.size() > 1)
+                frequentSets.put(new ItemSet(new TreeSet<>(beta)), support_count);
             ArrayList<CPB> cpbs = tree.genCPBs(entry.getKey());
-            TreeMap<Item, Integer> countmap = prune(cpbs);
+            HashMap<Item, Integer> countmap = prune(cpbs);
             FPTree betaFPTree = new FPTree(cpbs, countmap);
             if(!betaFPTree.isEmpty())
                 FP_growth(betaFPTree, beta);
@@ -346,6 +351,7 @@ public class FP_Growth implements Miner
         FPTree fpTree =new FPTree(cpbs, frequent_1_itemSets);                                //由初始模式基建FP树
        // fpTree.outputTree(fpTree.getRoot());                            //debug
         FP_growth(fpTree, new LinkedList<Item>());
+        outputStrongAssociationRules();
     }
 
     public void outputFrequentItemSets(LinkedList<Item> list, int support_count)
@@ -360,8 +366,37 @@ public class FP_Growth implements Miner
         }
     }
 
-    public void outputStrongAssociationRules(TreeMap<ItemSet, Integer> map, int k)
+    public void outputStrongAssociationRules()             //输出强关联规则
     {
+        System.out.println("频繁项集产生的强关联规则：");
+        Iterator<Map.Entry<ItemSet,Integer>> it = frequentSets.entrySet().iterator();
+        while(it.hasNext())
+        {
+            Map.Entry<ItemSet,Integer> entry=it.next();
+            ItemSet l = entry.getKey();
+            TreeSet<ItemSet> subsets = l.getSubSets();
+            for(ItemSet s: subsets)
+            {
+                if(support_count(l) >= support_count(s) * min_conf)
+                {
+                    TreeSet<Item> remainSet = new TreeSet<>();
+                    remainSet.addAll(l.getItemSet());
+                    remainSet.removeAll(s.getItemSet());
+                    ItemSet remain = new ItemSet(remainSet);
 
+                    System.out.println(s +" => " + remain);
+                }
+            }
+        }
+    }
+    private int support_count(ItemSet set)
+    {
+        int count = 0;
+        for(Transaction t: DB)
+        {
+            if(t.getTransaction().containsAll(set.getItemSet()))
+                count ++;
+        }
+        return count;
     }
 }

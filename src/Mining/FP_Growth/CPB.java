@@ -3,6 +3,7 @@ package Mining.FP_Growth;
 import Data.Item;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.TreeMap;
 
@@ -26,7 +27,7 @@ public class CPB                    //条件模式基
     {
         return cpb;
     }
-    public void sortBySupportCount(TreeMap<Item, Integer> freqSet)
+    public void sortBySupportCount(HashMap<Item, Integer> freqSet)
     {
         cpb.sort((Item i1, Item i2) -> (freqSet.get(i2) - freqSet.get(i1)));      //逆序
     }

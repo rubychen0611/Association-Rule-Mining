@@ -24,12 +24,13 @@ public class MiningTest
     @Test
     public  void testApriori()
     {
-        double min_sup = 0.02;     //最小支持度阈值
-        double min_conf = 0.5;    //最小置信度阈值
-        System.out.println(getMemoryUseInfo());
-        DataBase dataBase; dataBase = new DataBase(DataSet.GROCERYSTORE);      //数据库初始化
+        double min_sup = 0.2;     //最小支持度阈值
+        double min_conf = 0.8;    //最小置信度阈值
+       // System.out.println(getMemoryUseInfo());
+        DataBase dataBase; dataBase = new DataBase(DataSet.UNIX_USAGE);      //数据库初始化
         Miner miner;
         miner = new FP_Growth(dataBase, min_sup, min_conf);
+       //miner = new Apriori(dataBase, min_sup, min_conf);
         System.out.println(getMemoryUseInfo());
         miner.mine();
         System.out.println(getMemoryUseInfo());

@@ -144,4 +144,15 @@ public class ItemSet implements Comparable<ItemSet>
     {
         return this.itemSet.size();
     }
+
+    @Override
+    public int hashCode()
+    {
+        int hashcode = 0;
+        for(Item item: itemSet)
+        {
+            hashcode += item.hashCode();
+        }
+        return hashcode;
+    }
 }
